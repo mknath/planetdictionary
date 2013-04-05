@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:id="@+id/linearLayout1" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#ffffff" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/tabBar_ref"	
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tabbar" />
+	<LinearLayout 
+		android:id="@+id/linearLayout2" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="#ffffff" 
+		android:paddingLeft="10dp"
+		android:paddingTop="10dp">    
+		<TextView
+			android:layout_width="fill_parent"
+			android:id="@+id/title"
+			android:text="@string/txtAbout"
+			style="@style/BookmarkPage"
+			android:layout_height="wrap_content" 
+			android:gravity="center_vertical"/>
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:background="#2b689e"
+	        android:layout_marginLeft="6dip"
+	        android:layout_marginRight="6dip"
+	        android:layout_marginTop="6dip"
+	        android:layout_marginBottom="6dip" />		
+		<TextView 
+			android:text="" 
+			android:id="@+id/textView1"
+			style="@style/BookmarkTitle"
+			android:gravity="center_vertical" 
+			android:textStyle="normal"	 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" />
+	</LinearLayout>	
+</LinearLayout>

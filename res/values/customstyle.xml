@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="CustomWindowTitleText" parent="android:TextAppearance.WindowTitle">
+          <item name="android:textSize">20dip</item>
+          <item name="android:textColor">#FFFFFF</item>
+          <item name="android:textStyle">bold</item>
+     </style>
+     <style name="CustomWindowTitleBackground">
+           <item name="android:background">#000000</item>
+     </style>
+    <style name="CustomTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">40dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    <style name="BaseTopBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ButtonText" parent="BaseTopBar">
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="PageTitle" parent="BaseTopBar">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:shadowColor">#ffffff</item>
+    </style>
+    <style name="BookmarkPage" parent="BaseTopBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#2b689e</item>
+    </style>
+    <style name="BookmarkTitle" parent="BaseTopBar">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#000000</item>        
+    </style>
+	<style name="InputText">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#000000</item>
+	    <item name="android:gravity">left</item>    
+	    <item name="android:textSize">37dp</item>    
+	</style>	
+	<style name="InputWord">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#000000</item>
+	    <item name="android:gravity">left</item>    
+	    <item name="android:textSize">35dp</item>    
+	</style>	
+	<style name="welcome">
+	    <item name="android:paddingLeft">4px</item>
+	    <item name="android:paddingBottom">4px</item>
+	    <item name="android:textColor">#000000</item>
+	    <item name="android:textSize">12sp</item>
+	</style>
+	<style name="relatedword">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">#ffffff</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:layout_margin">3dp</item>
+    	<item name="android:textSize">15dp</item>
+    	<item name="android:textStyle">bold</item>
+	</style>
+	<style name="headertitle">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">#ffffff</item>
+    	<item name="android:shadowColor">#999999</item>
+    	<item name="android:gravity">left</item>
+    	<item name="android:layout_margin">3dp</item>
+    	<item name="android:textSize">15dp</item>
+    	<item name="android:textStyle">normal</item>
+	</style>
+    <style name="menuTitle" parent="BaseTopBar">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#FFFFFF</item>        
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>        
+    </style>		
+</resources>

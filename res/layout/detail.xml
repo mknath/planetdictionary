@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff">
+    <include
+        android:id="@+id/tabBar_ref"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tabbar" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="#FFFFFF" />	
+	<ScrollView
+		android:id="@+id/scrollview"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">			    
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:paddingLeft="3dp"
+		    android:paddingRight="3dp" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        style="@style/PageTitle"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:gravity="left"
+		        android:text=""
+		        android:textColor="#000000"
+		        android:textStyle="bold" android:layout_above="@+id/textView3"/>
+		    <ImageView
+		        android:id="@+id/addbookmark"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginRight="3dp"
+		        android:contentDescription="@string/app_name"
+		        android:src="@drawable/nobookmarks" />
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/addbookmark"
+		        android:layout_marginTop="14dp"
+		        android:paddingTop="10dip"
+		        android:paddingBottom="10dip"	        
+		        android:text=""
+		        android:textColor="#000000" />
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/textView2"
+		        android:gravity="left"
+		        android:text=""
+		        android:paddingTop="10dip"
+		        android:paddingBottom="10dip"
+		        android:textColor="#2b689e"
+		        android:textSize="12dip" />		    
+		</RelativeLayout>
+	</ScrollView>
+	<Button
+	    android:id="@+id/relatedbtn"
+	    style="@style/relatedword"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="#449def"
+	    android:padding="15dp"
+	    android:text="@string/similiarword"
+	    android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ppshein.PlanetMyanmarDictionary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/planet_dictionary"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.ppshein.PlanetMyanmarDictionary.IndexActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.Detail" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.Search" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.Bookmarks" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.related" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.About" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.Sync" android:screenOrientation="portrait" />
+        <activity android:name="com.ppshein.PlanetMyanmarDictionary.MainActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ppshein.PlanetMyanmarDictionary.RandomActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_random" >
+        </activity>
+        
+		<activity android:name="com.google.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>        
+    </application>
+
+</manifest>
